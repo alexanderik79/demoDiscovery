@@ -20,9 +20,25 @@ ext {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.postgresql:postgresql'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-stream-activemq'
+//    implementation 'org.projectlombok:lombok:1.18.22'
+//    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.postgresql:postgresql'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-stream'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+
 }
 
 dependencyManagement {
